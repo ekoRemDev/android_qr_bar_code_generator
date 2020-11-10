@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">QRCode</string>
+    <string name="app_name">Custom Barcode Generator</string>
     <string name="action_settings">Settings</string>
 </resources>

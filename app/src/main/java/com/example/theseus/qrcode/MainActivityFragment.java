@@ -1,8 +1,9 @@
 package com.example.theseus.qrcode;
 
-import android.content.Intent;
+import android.app.Fragment;
+
 import android.graphics.Bitmap;
-import android.support.v4.app.Fragment;
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,7 @@ import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
+
 
 /**
  * A placeholder fragment containing a simple view.
@@ -40,7 +42,7 @@ public class MainActivityFragment extends Fragment {
                 String text=mEditText.getText().toString();
                 MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
                 try {
-                    BitMatrix bitMatrix = multiFormatWriter.encode(text, BarcodeFormat.QR_CODE,200,200);
+                    BitMatrix bitMatrix = multiFormatWriter.encode(text, BarcodeFormat.CODE_128,200,200);
                     BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
                     Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
                     qrCode.setImageBitmap(bitmap);

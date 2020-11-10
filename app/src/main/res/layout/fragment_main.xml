@@ -12,8 +12,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         app:srcCompat="@mipmap/ic_launcher"
         tools:layout_editor_absoluteX="152dp"
         tools:layout_editor_absoluteY="218dp" />
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Type text"
+        android:text="Type text to Generate Barcode"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="16dp" />
 
@@ -32,7 +32,7 @@
         android:id="@+id/generate_qr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Generate QR"
+        android:text="Generate Barcode"
         tools:layout_editor_absoluteX="133dp"
         tools:layout_editor_absoluteY="92dp" />
 
